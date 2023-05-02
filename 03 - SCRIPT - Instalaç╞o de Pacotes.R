@@ -2,9 +2,23 @@
 #               INSTALAÇÃO E CARREGAMENTO DE PACOTES NECESSÁRIOS               #
 ################################################################################
 #Pacotes utilizados
-pacotes <- c("plotly","tidyverse","knitr","kableExtra","reshape2","ggrepel",
-             "fastDummies","lmtest","splines","jtools","questionr","MASS",
-             "pscl","overdisp","magick","cowplot","beepr")
+pacotes <- c("plotly",
+             "tidyverse",
+             "knitr",
+             "kableExtra",
+             "reshape2",
+             "ggrepel",
+             "fastDummies",
+             "lmtest",
+             "splines",
+             "jtools",
+             "questionr",
+             "MASS", 
+             "pscl",
+             "overdisp",
+             "magick",
+             "cowplot",
+             "beepr")
 
 if(sum(as.numeric(!pacotes %in% installed.packages())) != 0){
   instalador <- pacotes[!pacotes %in% installed.packages()]
