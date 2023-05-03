@@ -286,7 +286,7 @@ modelo_bneg$theta
 
 # Estatística z de Wald do parâmetro theta para verificação da
 # significância estatística
-modelo_bneg$theta / modelo_bneg$SE.theta  #maior que 1.96
+modelo_bneg$theta / modelo_bneg$SE.theta  # maior que 1.96 (0.95)
 
 # Extração do valor de Log-Likelihood (LL)
 logLik(modelo_bneg)
