@@ -305,7 +305,7 @@ data.frame(LL_Poisson = round(logLik(modelo_poisson), 1),
   kable() %>%
   kable_styling(bootstrap_options = "striped", position = "center", 
                 full_width = F, 
-                font_size = 30)
+                font_size = 12)
 
 # Likelihoo-ratio test
 lrtest(modelo_poisson, modelo_bneg)
@@ -386,7 +386,7 @@ corruption %>%
   kable() %>%
   kable_styling(bootstrap_options = "striped", 
                 full_width = F, 
-                font_size = 19)
+                font_size = 10)
 
 
 # Fitted values dos modelos POISSON e BINOMIAL NEGATIVO, considerando,
@@ -444,7 +444,7 @@ corruption2 %>%
   kable() %>%
   kable_styling(bootstrap_options = "striped", 
                 full_width = T, 
-                font_size = 30)
+                font_size = 10)
 
 # Estimação do modelo_poisson2
 modelo_poisson2 <- glm(formula = violations ~ staff + post + corruption,
@@ -479,7 +479,7 @@ data.frame(LL_Poisson2 = round(logLik(modelo_poisson2), 1),
   kable() %>%
   kable_styling(bootstrap_options = "striped", position = "center", 
                 full_width = F, 
-                font_size = 30)
+                font_size = 10)
 
 # Likelihoo-ratio test para a comparação entre modelo_poisson2 e modelo_bneg2
 lrtest(modelo_poisson2, modelo_bneg2)
@@ -551,7 +551,7 @@ data.frame(LL_Poisson = round(logLik(modelo_poisson), 1),
   kable() %>%
   kable_styling(bootstrap_options = "striped", position = "center",
                 full_width = F,
-                font_size = 30)
+                font_size = 10)
 
 # Likelihoo-ratio test
 lrtest(modelo_poisson, modelo_zip)
@@ -696,7 +696,7 @@ data.frame(LL_Bneg = round(logLik(modelo_bneg), 2),
   kable() %>%
   kable_styling(bootstrap_options = "striped", position = "center", 
                 full_width = F, 
-                font_size = 30)
+                font_size = 10)
 
 # Likelihoo-ratio test
 lrtest(modelo_bneg, modelo_zinb)
@@ -810,7 +810,7 @@ corruption %>%
   kable() %>%
   kable_styling(bootstrap_options = "striped", 
                 full_width = T, 
-                font_size = 13)
+                font_size = 10)
 
 
 # Fitted values dos modelos POISSON, BNEG, ZIP e ZINB, considerando, para fins
